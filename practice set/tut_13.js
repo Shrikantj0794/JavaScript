@@ -1,27 +1,28 @@
-// Map(), Filter(), Reduce()
-// map create a new array by performing some operation on each array element
+// create an array of number and take input from user to dd number to this array
 
-arr = [1,2,3]
-let a = arr.map((value)=>{
-console.log(value);
-  return value+1;
-})
-console.log(a)
+let arr = [1,2,3,4,5,6,7,8,9]
+let add;
+add = prompt("Enter a number for add in array")
+add = Number.parseInt(add)
+arr.push(add)
+console.log(arr)
 
-// Filter()
-// filter the values of an array according ther condition 
+// dont stop still 0 is added
+do{
+  add2 = prompt("Enter a number for add in array")
+  add = Number.parseInt(add2)
+  arr.push(add2)
+}while(add!=0)
+console.log(arr)
 
-arr2 = [1,2,3,4,5,6,7,8,9,10]
-let a2 = arr2.filter((a)=>{
-  return a<5
+// divisible by 2
+let a2 = arr.filter((value)=>{
+  return value % 2 == 0
 })
 console.log(a2)
 
-// Reduce()
-// reduce an array to a single value 
-
-arr3= [1,2,3,4,5,6,7,8,9,10]
-let a3 = arr3.reduce((element_1,element_2)=>{
-  return element_1+element_2 
+// print array of square of given no
+let a3 = arr.map((value)=>{
+  return value*value
 })
 console.log(a3)
