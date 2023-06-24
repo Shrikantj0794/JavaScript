@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html {
+  height: 100%;
+  width: 100%;
+}
+.red{
+  background-color: black;
+  color: red;
+}
+.yellow{
+  background-color: blue;
+  color: yellow;
+}
+.text-dark{
+  color:black;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id="first" class="red"> Hey! I am shrikant.</div>
+  <script>
+    first.className = 'yellow'
+first.className = 'yellow text-dark'
+
+first.classList.add("new")
+first.classList.remove("text-dark")
+first.classList.toggle("yellow") 
+// above toggle remove yellow class
+first.classList.toggle("yellow")
+// above toggle add yellow class
+
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
