@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    let a = setTimeout(function(){
+  alert("after 5sec")
+},5000)
+console.log(a)
+
+let b = prompt("do you want to run settimeout ?")
+if("n"==b){
+  clearTimeout(a)
+}
+
+// function with arg  please click n for bellow code exicute
+let sum = (a,b)=>{
+  document.write("I am running: "+(a+b))
+}
+setTimeout(sum,1000,5,5)
+
+// setInterval
+let d = setInterval(function(){
+  // alert("HAHA I cant stop")
+},5000)
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
