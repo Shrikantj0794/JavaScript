@@ -1,22 +1,65 @@
 <!DOCTYPE html>
+<html>
 
-[`How do all the oceans say hello to each other? They wave!`,
-`How do you talk to a giant? Use big words!`,
-`Why are balloons so expensive? Inflation!`,
-`What did one wall say to the other wall? I’ll meet you at the corner!`,
-`What do you call a bear with no teeth? A gummy bear!`,
-`What do you call cheese that isn’t yours? Nacho cheese!`,
-`Where do cows go for entertainment? To the moo-vies!`,
-`Knock, knock. Who’s there? Cows go. Cows go who? No, cows go MOO!`,
-`What do you call a cow with no legs? Ground beef!`,
-`What do you call a cow with two legs? Lean meat!`,
-`What do you call a pig that knows karate? A pork chop!`,
-`Why are ghosts bad liars? Because you can see right through them!`,
-`What animal needs to wear a wig? A bald eagle!`,
-`What do you call a fly without wings? A walk!`,
-`Knock knock. Who’s there? A little old lady? A little old lady who? I didn’t know you could yodel!`,
-`Why do bees have sticky hair? Because they use honey combs!`,
-`What do you call an alligator in a vest? An investigator!`,
-`Why can’t you give Elsa a balloon? Because she will let it go!`,
-`What do you get when you cross a snowman with a vampire Frostbite!`,
-`What has four wheels and flies? A garbage truck!`,]
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>random jokes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    html {
+  height: 100%;
+  width: 100%;
+}
+#joke{
+  background-color: #9988ec;
+  color: black;
+  font-size: 1.5em;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+  </style>
+</head>
+
+<body>
+  <div id="joke">This is a sample joke</div>
+  <script>
+    // randome jokes
+let myjokes = [`How do all the oceans say hello to each other? They wave!`,
+  `How do you talk to a giant? Use big words!`,
+  `Why are balloons so expensive? Inflation!`,
+  `What did one wall say to the other wall? I’ll meet you at the corner!`,
+  `What do you call a bear with no teeth? A gummy bear!`,
+  `What do you call cheese that isn’t yours? Nacho cheese!`,
+  `Where do cows go for entertainment? To the moo-vies!`,
+  `Knock, knock. Who’s there? Cows go. Cows go who? No, cows go MOO!`,
+  `What do you call a cow with no legs? Ground beef!`,
+  `What do you call a cow with two legs? Lean meat!`,
+  `What do you call a pig that knows karate? A pork chop!`,
+  `Why are ghosts bad liars? Because you can see right through them!`,
+  `What animal needs to wear a wig? A bald eagle!`,
+  `What do you call a fly without wings? A walk!`,
+  `Knock knock. Who’s there? A little old lady? A little old lady who? I didn’t know you could yodel!`,
+  `Why do bees have sticky hair? Because they use honey combs!`,
+  `What do you call an alligator in a vest? An investigator!`,
+  `Why can’t you give Elsa a balloon? Because she will let it go!`,
+  `What do you get when you cross a snowman with a vampire Frostbite!`,
+  `What has four wheels and flies? A garbage truck!`]
+
+
+let index = Math.floor(Math.random() * (myjokes.length - 1))
+console.log(index)
+joke.innerHTML = myjokes[index].joke
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
