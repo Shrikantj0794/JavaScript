@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    // callback
+
+// function linkadded(href, hello) {
+//   let link = document.createElement("link")
+//   link.href = href;
+//   hello()
+//   document.head.appendChild(link)
+// }
+// function hello (){
+//   alert("well-come broo")
+// }
+// linkadded("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css", hello)
+
+function scriptload(src, hello) {
+  let script = document.createElement("script")
+  script.src = src;
+  script.onload = function() {
+    alert("script added");
+    hello()
+  }
+  // when link not working
+  script.onerror = function() {
+    alert("Script not loaded")
+    hello(new Error("src not found"))
+  }
+  document.body.appendChild(script)
+}
+
+function hello(error) {
+  if (error) {
+    confirm("Can you send msg to CEO")
+    return
+    // return work like break
+  }
+  alert("well-come")
+}
+// shri.. add when you remove it then the link is worked
+scriptload("https://shri..cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js", hello)
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+</body>
+
+</html>
