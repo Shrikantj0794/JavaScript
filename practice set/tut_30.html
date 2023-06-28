@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+    // let promise = new Promise(function(resolve, reject){
+//   alert("hello")
+//   resolve(5)
+// })
+// console.log("HI one ")
+// let a = setTimeout(function(){
+//   console.log("HI two ")
+// },2000)
+// console.log("HI three")
+
+let p1 = new Promise((resolve, reject)=>{
+  console.log("promise is pending");
+  setTimeout(()=>{
+    // console.log("I am a promise and I am fullfiled")
+    resolve(true)
+  },4000)
+})
+
+let p2 = new Promise((resolve, reject)=>{
+  console.log("promise is pending");
+  setTimeout(()=>{
+    // console.log("I am a promise and I am reject")
+    reject(new Error("I am an error"))
+  },4000)
+})
+// To get the value
+p1.then((value)=>{
+  console.log(value)
+})
+// To catch the error using catch function
+p2.catch(()=>{
+  console.log("some error occured in p2")
+})
+
+// to catch the error using then function
+p2.then((value)=>{
+  console.log(value)
+},(error)=>{ 
+  console.log("some error occured in p2, show using then function")
+})
+
+// let promise = new Promise ((resolve)=>{
+//   setTimeout(()=>{
+//   resolve("done")  
+//   },5000)
+// })
+
+// promise.then(alert("hi"))
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
