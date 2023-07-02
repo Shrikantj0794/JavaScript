@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    async function weather(){
+  let MumbaiWeather = new Promise ((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("27 deg")
+    },2000)
+  })
+
+  let WagholiWeather = new Promise ((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve("21 deg")
+    },4000)
+  })
+
+  // MumbaiWeather.then(alert)
+  // WagholiWeather.then(alert)
+  console.log("Featching Mumbai weather please wait")
+  let Mweather = await MumbaiWeather
+  console.log("featched Mumbai weather is: "+Mweather)
+  console.log("Featching wagholi weather please wait")
+  let Wweather = await WagholiWeather
+  console.log("featched Wagholi weather is: "+Wweather)
+}
+
+console.log("Welcome to weather contril room")
+let a = weather()
+a.then((value)=>{
+  console.log(value)
+})
+  </script>
+</body>
+
+</html>
