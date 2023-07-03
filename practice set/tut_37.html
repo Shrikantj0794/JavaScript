@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    // try {
+//   // console.log(shrikant)
+//   throw new ReferenceError("Shrikant is not defined")
+//   // we cant use both error object to custam a error
+//   throw new Error("Shrikant is not defined_2")
+// }
+// catch (error) {
+//   console.log(error.name)
+//   console.log(error.message)
+//   console.log(error.stack)
+// }
+
+
+try{
+  let marks = prompt("Enter your final marks")
+  marks = Number.parseInt(marks)
+  if(marks < 40){
+    throw new Error("You are fail buddy")
+  }else{
+    throw new Error("you are pass")
+  }
+}
+catch(error){
+  console.log(error)  
+}
+
+  </script>
+</body>
+
+</html>
