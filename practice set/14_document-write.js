@@ -10,7 +10,7 @@ else{
   document.write(" you can't drive car")
 }
 
-// below code for cangeing body color
+// below code for changing body color
 
 // alert("Choose background color")
 // let a = prompt("Enter a number")

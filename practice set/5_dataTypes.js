@@ -1,5 +1,5 @@
 /* Variables in JS
-two types of JS
+two types of dta types in js are defined in the following
 1. Primitive data type(Stored in stack//static )//based
 2. Reference data type(stored in heap//dynamic)//objects
 
