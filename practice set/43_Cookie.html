@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    console.log(document.cookie) // there is no any cookie thats why it showing null
+
+document.cookie = "name= shri"
+document.cookie = "name2= Jamale"
+document.cookie = "name= shrikant"
+let key = prompt("enter your key")
+let value = prompt("enter your value")
+// document.cookie = `${key}=${value}` // they dont allo any string 
+document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`  // encodeURIComponent allo the any types of string ex. ff@@gg, 66##%%,^^778, 
+// adding cookie in encode formate after addidng it decode the output uding --decodeURIComponent
+
+document.cookie = "a=1; b=2; c=3"  //only one cookie added b=2, c=3 is obtions
+
+console.log(document.cookie)
+  </script>
+</body>
+
+</html>
