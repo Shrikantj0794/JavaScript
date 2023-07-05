@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    let key = prompt("Enter name")
+let value = prompt("enter a rollno")
+
+//setItem
+localStorage.setItem(key, value)
+sessionStorage.setItem(key, value)
+
+//getItem
+console.log(`the key is ${key} & value is ${localStorage.getItem(key)}`)
+console.log(`the key is ${key} & value is ${sessionStorage.getItem(key)}`)
+
+//remove Item
+if (key == 'red' || key == 'blue') {
+  sessionStorage.removeItem(key)
+}
+if (key == 'red' || key == 'blue') {
+  sessionStorage.removeItem(key)
+}
+
+// clear()
+// localStorage.clear()
+// sessionStorage.clear()
+
+//keyIndex
+console.log(localStorage.key(0))
+console.log(sessionStorage.key(0))
+//lenth
+let a = localStorage.length
+console.log(a)
+let a2 = sessionStorage.length
+console.log(a)
+
+  </script>
+</body>
+
+</html>
