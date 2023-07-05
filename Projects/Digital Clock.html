@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="time"></div>
+  <script>
+    setInterval(() => {
+  let d = new Date().toTimeString() // toLocaleTimeString()
+  let d2 = new Date().toLocaleTimeString() //1:39:24 PM
+
+
+  // time.innerHTML = d
+     time.innerHTML = d2
+}, 1000)
+  </script>
+</body>
+
+</html>
