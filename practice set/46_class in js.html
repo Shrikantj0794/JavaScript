@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class Railwayform {
+  submit(){
+    alert(this.name +" form is submited Your train No is : "+ this.trainNo)
+  }
+  cancel(){
+    alert(this.name +" form is canceled Your train No is : "+ this.trainNo)
+  }
+  fill(givenName,TrainNo){
+    this.name = givenName
+    this.trainNo = TrainNo
+  }
+}
+
+let PName = new Railwayform()
+PName.fill("shrikant","4747474")
+let P2Name = new Railwayform()
+P2Name.fill("Harry","2628262")
+
+
+PName.submit()
+P2Name.cancel()
+  </script>
+</body>
+
+</html>
