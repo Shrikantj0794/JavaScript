@@ -9,30 +9,37 @@
 </head>
 
 <body>
-  Hello world 
+  Hello world
   <script>
     class Railwayform {
+  
+  constructor(givenName,TrainNo){
+    this.name = givenName
+    this.trainNo = TrainNo
+  }
   submit(){
     alert(this.name +" form is submited Your train No is : "+ this.trainNo)
   }
   cancel(){
     alert(this.name +" form is canceled Your train No is : "+ this.trainNo)
   }
-  fill(givenName,TrainNo){
-    this.name = givenName
-    this.trainNo = TrainNo
-  }
+  // fill(givenName,TrainNo){
+  //   this.name = givenName
+  //   this.trainNo = TrainNo
+  // }
 }
 
-let PName = new Railwayform()
-PName.fill("shrikant","4747474")
-let P2Name = new Railwayform()
-P2Name.fill("Harry","2628262")
+let PName = new Railwayform("shrikant","4747474")
+// PName.fill("shrikant","4747474")
+let P2Name = new Railwayform("Harry","2628262")
+// P2Name.fill("Harry","2628262")
 
 
 PName.submit()
 P2Name.cancel()
+
+// constructors used for less written code
   </script>
-</body>
+ </body>
 
 </html>

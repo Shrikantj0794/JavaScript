@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class Employe {
+  constructor(name) {
+    this.Name = name
+    console.log(`the name of Employe is: ${name}`)
+  }
+  login() {
+    console.log(`Employee logged in `)
+  }
+  logout() {
+    console.log(`Employe logout`)
+  }
+  Leaves(leave) {
+    console.log(`Employee want ${leave}`)
+  }
+}
+
+class programer extends Employe {
+  requestCoffe() {
+    console.log(`programer want coffi`)
+  }
+  Leaves(leave) {
+    // super keyword use
+    super.Leaves(5)
+    console.log("one extra is granted")
+  }
+}
+let e = new programer("Shrikant")
+e.login()
+e.Leaves(4)
+  </script>
+</body>
+
+</html>

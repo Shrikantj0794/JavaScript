@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class Animal {
+  constructor(Name, color) {
+    this.Name = Name
+    this.color = color
+  }
+
+  shouting() {
+    console.log(this.Name + " is shoutting" + " and his color is" + this.color)
+  }
+}
+//create a another class and is inbuid above two method
+//use extends class
+
+class birds extends Animal{
+  Fly(){
+    console.log(this.Name + " is not fly and his color is "+ this.color)
+  }
+}
+let ani = new Animal("bruno", " white")
+let bird = new birds("cat", "brown")
+ani.shouting()
+bird.Fly()
+
+
+  </script>
+</body>
+
+</html>
