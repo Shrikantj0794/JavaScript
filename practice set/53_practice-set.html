@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class ComplexNo{
+  constructor(real, imaginary){
+  this.real = real
+  this.imaginary = imaginary
+  }
+  add(num){
+    this.real = this.real+ num.real
+    this.imaginary = this.imaginary+num.imaginary
+  }
+}
+
+let a = new ComplexNo(2, 4)
+let b = new ComplexNo(6, 8)
+
+a.add(b)
+console.log(a.real, a.imaginary)
+  </script>
+</body>
+</html>
