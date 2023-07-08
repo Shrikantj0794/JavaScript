@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class Animal {
+  constructor(name) {
+    this.Name = Animal.capitalize(name)
+  }
+  walk() {
+    alert("the animal " + this.Name + " is walking")
+  }
+  static capitalize(name) {
+    return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+  }
+}
+
+a = new Animal("Dog")
+a.walk()
+  </script>
+</body>
+
+</html>
