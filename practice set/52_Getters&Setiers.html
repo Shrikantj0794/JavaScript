@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class Animal {
+  constructor(name){
+    this.Aname = name
+  }
+  fly(){
+    console.log("may ud raha hu")
+  }
+  get name(){
+    return this.Aname
+  }
+  set name(newName){
+    this.Aname = newName
+  }
+}
+let a = new Animal("DOG")
+a.fly()
+console.log(a.name)
+a.name = "cat"
+console.log(a.name)
+
+console.log(a instanceof Animal) // a obj is belong to a Animal class TRUE
+let c = 56;
+console.log(c instanceof Animal) // c obj is not belong to a Animal class FALSE
+
+  </script>
+</body>
+
+</html>
