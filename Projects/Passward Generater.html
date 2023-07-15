@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Hello world
+  <script>
+    class Passward {
+  constructor() {
+    console.log("welcome to passward Generater")
+    this.pass = ""
+  }
+  generatePassward(len) {
+    let numbers = "1234567890"
+    let alpha = "qwertyuioplkjhgfdsazxcvbnm"
+    let special = "!@#$%^&*()_?"
+    if (len < 3) {
+      console.log("Your passward atleast greater than 3 characters")
+    }
+    else {
+      let i = 0
+      while (i < len) {
+        this.pass += alpha[Math.floor(Math.random() * alpha.length)]
+        this.pass += numbers[Math.floor(Math.random() * numbers.length)]
+        this.pass += special[Math.floor(Math.random() * special.length)]
+        i += 3
+      }
+      return this.pass
+    }
+  }
+}
+let p = new Passward
+console.log(p.generatePassward(8))
+  </script>
+</body>
+
+</html>
