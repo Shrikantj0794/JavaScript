@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+    let msg = "welcome"
+
+let a = function hello1() {
+  let msg = "good morning"
+  console.log("hello1: " + msg)
+
+  let b = function hello2(){
+    console.log("hello2: "+ msg)
+  }
+  return b
+}
+b = a()
+b()
+
+//EX2
+
+function closures(){
+  const x = ()=>{
+      let p =1
+    console.log(p)
+    const y = ()=>{
+      let p = 2
+      console.log(p)
+      const z = ()=>{
+        let p = 3
+        console.log(p)
+      }
+      z()
+    }
+    y()
+  }
+  x()
+}
+closures()
+  </script>
+</body>
+
+</html>
